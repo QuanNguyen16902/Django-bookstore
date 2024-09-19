@@ -1,0 +1,27 @@
+ .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.3s ease, max-height 0.3s ease;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      opacity: 1;
+      max-height: 200px; /* Adjust based on content height */
+    }
+
+    .dropdown-menu {
+      min-width: 150px;
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+    }
